@@ -1,0 +1,54 @@
+*{
+box-sizing:border-box;
+}
+body{
+	display:flex;
+background-image: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+background-repeat:no-repeat;
+height:100vh;
+margin:0;
+align-items:center;
+font-family: 'Kumbh Sans', sans-serif;
+ background-blend-mode:darken;
+
+}
+
+.window{
+	width:65%;
+	height:650px;
+	margin:auto;
+	background-color:white;
+	border-radius:30px;
+	position:relative;
+	overflow: hidden;
+	display:flex;
+	flex-direction:row;
+}
+	.images{
+		width:50%;
+	
+	}
+	.FAQ{
+		width:60%;
+		height:auto;
+	}
+	
+	
+	.images img:first-child{
+		margin-left:-780px;
+		margin-top:-390px;
+		height:1250px;
+	
+	}
+	.images img:nth-child(2){
+		width:48%;
+	position:absolute;
+	left:-105px;
+	top:88px;
+	}
+	
+.kubs{
+	position:absolute;
+margin-left:210px;
+margin-top:78px;
+z-index:1;}
