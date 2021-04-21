@@ -34,14 +34,33 @@ font-family: 'Kumbh Sans', sans-serif;
 	}
 	
 	.question{
-		display:flex;
-	flex-direction:row;
+		
+
 	width:80%;}
 	
 .question img{
-	
+	display:block;
+	float:right;
 width:15px;
-height:10px;}
+height:10px;
+cursor:pointer;
+position:relative;
+top:-30px;
+right:20px;
+transform:none;}
+
+.question p{
+cursor:pointer;}
+
+.question p:hover{
+color:hsl(14, 88%, 65%);}
+
+.answer{
+display:none;
+color:hsl(240, 6%, 50%);}
+
+
+	
 	
 	.images img:first-child{
 		margin-left:-780px;
