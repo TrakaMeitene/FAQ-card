@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   
   <body>
@@ -22,15 +23,15 @@
   <h1>FAQ</h1>
   <div  class="question">
 <p onclick="myFunction()"> How many team members can I invite? </p>
-<img id="arrowDown" onclick="myFunction()"  src="images/icon-arrow-down.svg">
+<img id="arrowDown"  onclick="myFunction()" src="images/icon-arrow-down.svg">
 <div id="block" class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
   team members for the Premium plan.</div>
   <hr>
 </div>
  <div  class="question">
 <p onclick="myFunction()">   What is the maximum file upload size?</p>
-<img id="arrowDown" onclick="myFunction()"  src="images/icon-arrow-down.svg">
-<div id="block" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+<img id="arrowDown" onclick="myFunction()" src="images/icon-arrow-down.svg">
+<div id="block1" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
   <hr>
 </div>
   </div>
@@ -38,19 +39,28 @@
   
   
   <script>
-  function myFunction(){
+ function myFunction(){
   const x = document.getElementById("block");
   const arrow2 = document.getElementById("arrowDown");
+const y =document.getElementById("block1");
   if (x.style.display === "none"){
   x.style.display ="block";
   arrow2.style.transform ="rotate(180deg)";
-  
- }
+
+ } if else{
+   (y.style.display === "none"){
+y.style.display="block";
+}
  else {
  x.style.display ="none";
  arrow2.style.transform = "none";
+ y.style.display = "none";
  }
+
  }
+ 
+
+
   </script>
   </body>
   </html>
