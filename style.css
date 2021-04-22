@@ -75,8 +75,7 @@ color:hsl(240, 6%, 50%);
 overflow: hidden;
 width:100%;}
 
-.active img{
-transform:rotate(180deg);}
+
 	
 	.images img:first-child{
 		margin-left:-780px;
@@ -100,5 +99,5 @@ z-index:1;}
 .arrowUp img{
 transform:rotate(180deg);
 }
-.arrowUp1 img{
-transform:rotate(360deg);}
+.arrowUp p{
+font-weight:bold;}
