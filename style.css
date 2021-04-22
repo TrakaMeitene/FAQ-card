@@ -108,5 +108,20 @@ font-weight:bold;}
 top:200px;
 	flex-direction:column;
 }
+	.images{
+		
+background-image:url(images/bg-pattern-mobile.svg);
+width:80%;
+margin:auto;
+background-position:top center ;
+background-size: contain ;
+	}
 	
+	.women{
+		position:relative;
+		left:0px;
+		top:0px;
+		width:91%;
+		
+	}
 }
