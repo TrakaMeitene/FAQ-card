@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   
@@ -22,43 +23,46 @@
   <div class="FAQ">
   <h1>FAQ</h1>
   <div  class="question">
-<p onclick="myFunction()"> How many team members can I invite? </p>
-<img id="arrowDown"  onclick="myFunction()" src="images/icon-arrow-down.svg">
-<div id="block" class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.</div>
-  <hr>
+<p> How many team members can I invite? <img class="arrowDown" src="images/icon-arrow-down.svg"></p>
 </div>
+<div id="block" class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+  team members for the Premium plan. </div>
+ <hr>
+
  <div  class="question">
-<p onclick="myFunction()">   What is the maximum file upload size?</p>
-<img id="arrowDown" onclick="myFunction()" src="images/icon-arrow-down.svg">
+<p>   What is the maximum file upload size? <img class="arrowDown" src="images/icon-arrow-down.svg"></p>
+</div>
 <div id="block1" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
   <hr>
-</div>
+
   </div>
   </div>
   
   
   <script>
- function myFunction(){
-  const x = document.getElementById("block");
-  const arrow2 = document.getElementById("arrowDown");
-const y =document.getElementById("block1");
-  if (x.style.display === "none"){
-  x.style.display ="block";
-  arrow2.style.transform ="rotate(180deg)";
+var acc = document.getElementsByClassName("question");
+var i;
 
- } if else{
-   (y.style.display === "none"){
-y.style.display="block";
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+
+   this.classList.toggle("question");
+   var answer = this.nextElementSibling;
+  
+    if (answer.style.display === "none") {
+      answer.style.display = "block";
+	 
+	
+	  
+    } else {
+      answer.style.display = "none";
+	
+	     }
+  });
 }
- else {
- x.style.display ="none";
- arrow2.style.transform = "none";
- y.style.display = "none";
- }
-
- }
  
+
 
 
   </script>

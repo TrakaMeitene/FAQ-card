@@ -34,20 +34,21 @@ font-family: 'Kumbh Sans', sans-serif;
 	}
 	
 	.question{
-		
-
+		 transition: 0.4s;
+ cursor: pointer;
 	width:80%;}
 	
-.question img{
-	display:block;
-	float:right;
+p img{
+	
+	margin-left:200px;
 width:15px;
 height:10px;
 cursor:pointer;
-position:relative;
-top:-30px;
-right:20px;
-transform:none;}
+transform:none;
+}
+hr{
+width:80%;
+margin-left:0px;}
 
 .question p{
 cursor:pointer;}
@@ -57,7 +58,9 @@ color:hsl(14, 88%, 65%);}
 
 .answer{
 display:none;
-color:hsl(240, 6%, 50%);}
+color:hsl(240, 6%, 50%);
+overflow: hidden;
+width:80%;}
 
 
 	
@@ -80,3 +83,6 @@ color:hsl(240, 6%, 50%);}
 margin-left:210px;
 margin-top:78px;
 z-index:1;}
+
+.arrowUp{
+transform:rotate(180deg);}
