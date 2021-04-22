@@ -105,13 +105,14 @@ transform:rotate(180deg);
 .arrowUp p{
 font-weight:bold;}
 
-@media screen and (max-width:800px){
+@media screen and (max-width:590px){
 	
 	body{
 		height:128vh;
-	justify-content:ceter;}
+	}
 	
 		.window{
+			margin-top:200px;
 	width:85%;
 	height:auto;
 
@@ -135,14 +136,14 @@ background-size: contain ;
 		width:70%;
 		position:absolute;
 	left:15%;
-	top:28px;
+	top:68px;
 		z-index:2;
 	}
 	.kubs{
 		width:28%;
 	position:absolute;
-margin-left:50px;
-margin-top:-520px;
+top:50px;
+right:60%;
 z-index:2;}
 
 .FAQ{
