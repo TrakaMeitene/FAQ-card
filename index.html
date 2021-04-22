@@ -22,7 +22,7 @@
   
   <div class="FAQ">
   <h1>FAQ</h1>
-  <div  class="question">
+  <div class="question">
 <p> How many team members can I invite? <img class="arrowDown" src="images/icon-arrow-down.svg"></p>
 </div>
 <div id="block" class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
@@ -51,33 +51,37 @@
      <div  class="question">
 <p>   Do you provide additional support?<img class="arrowDown" src="images/icon-arrow-down.svg"></p>
 </div>
-<div id="block1" class="answer"> Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+<div class="answer"> Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
   <hr>
   </div>
   </div>
   
   
   <script>
+
 var acc = document.getElementsByClassName("question");
+
 var i;
 
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-
-   this.classList.toggle("question");
+ 
+   
    var answer = this.nextElementSibling;
-  
+
     if (answer.style.display === "none") {
-      answer.style.display = "block";
-	 
-	
+		answer.style.display = "block";
+		this.classList.toggle("arrowUp");
+
 	  
     } else {
-      answer.style.display = "none";
-	
+		answer.style.display = "none";
+		this.classList.remove("arrowUp")
 	     }
   });
+  
+ 
 }
  
 
