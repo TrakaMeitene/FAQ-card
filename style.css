@@ -28,27 +28,31 @@ font-family: 'Kumbh Sans', sans-serif;
 		width:50%;
 	
 	}
-	.FAQ{
-		width:60%;
+	.FAQ{display:flex;
+	justify-content:center;
+	flex-direction:column;
+		width:40%;
 		height:auto;
 	}
 	
 	.question{
 		 transition: 0.4s;
  cursor: pointer;
-	width:80%;}
+	width:100%;}
 	
 p img{
 	
-	margin-left:200px;
+	float:right;
 width:15px;
 height:10px;
 cursor:pointer;
 transform:none;
 }
 hr{
-width:80%;
-margin-left:0px;}
+width:100%;
+margin-left:0px;
+color:hsl(240, 5%, 91%);
+}
 
 .question p{
 cursor:pointer;}
@@ -60,7 +64,7 @@ color:hsl(14, 88%, 65%);}
 display:none;
 color:hsl(240, 6%, 50%);
 overflow: hidden;
-width:80%;}
+width:100%;}
 
 
 	
