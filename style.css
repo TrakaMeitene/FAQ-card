@@ -40,6 +40,10 @@ background-size: 180% ;
 		top:95px;
 		width:91%;
 	}
+	
+	.women1{
+	display:none;}
+	
 	.FAQ{display:flex;
 	justify-content:center;
 	flex-direction:column;
@@ -102,26 +106,55 @@ transform:rotate(180deg);
 font-weight:bold;}
 
 @media screen and (max-width:800px){
-	.window{
+	
+	body{
+		height:128vh;
+	justify-content:ceter;}
+	
+		.window{
 	width:85%;
 	height:auto;
-top:200px;
+
 	flex-direction:column;
 }
 	.images{
 		
 background-image:url(images/bg-pattern-mobile.svg);
 width:80%;
+height:130px;
 margin:auto;
 background-position:top center ;
 background-size: contain ;
 	}
 	
 	.women{
-		position:relative;
-		left:0px;
-		top:0px;
-		width:91%;
-		
+	visibility:hidden;}
+	
+	.women1{
+		display:block;
+		width:70%;
+		position:absolute;
+	left:15%;
+	top:28px;
+		z-index:2;
 	}
+	.kubs{
+		width:28%;
+	position:absolute;
+margin-left:50px;
+margin-top:-520px;
+z-index:2;}
+
+.FAQ{
+	width:85%;
+	margin:auto;
+	padding-bottom:40px;
+}
+h1{
+text-align:center;}
+p{
+font-size:13px;}
+.answer{
+font-size:13px;}
+	
 }
