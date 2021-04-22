@@ -13,6 +13,8 @@ font-family: 'Kumbh Sans', sans-serif;
 
 }
 
+
+
 .window{
 	width:65%;
 	height:650px;
@@ -26,7 +28,17 @@ font-family: 'Kumbh Sans', sans-serif;
 }
 	.images{
 		width:50%;
+background-image:url(images/bg-pattern-desktop.svg);
+background-repeat:no-repeat;
+background-position:128% 75% ;
+background-size: 180% ;
+	}
 	
+	.women{
+		position:relative;
+		left:-90px;
+		top:95px;
+		width:91%;
 	}
 	.FAQ{display:flex;
 	justify-content:center;
@@ -77,23 +89,10 @@ width:100%;}
 
 
 	
-	.images img:first-child{
-		margin-left:-780px;
-		margin-top:-390px;
-		height:1250px;
-	
-	}
-	.images img:nth-child(2){
-		width:48%;
-	position:absolute;
-	left:-105px;
-	top:88px;
-	}
-	
 .kubs{
 	position:absolute;
-margin-left:210px;
-margin-top:78px;
+margin-left:240px;
+margin-top:88px;
 z-index:1;}
 
 .arrowUp img{
@@ -101,3 +100,13 @@ transform:rotate(180deg);
 }
 .arrowUp p{
 font-weight:bold;}
+
+@media screen and (max-width:800px){
+	.window{
+	width:85%;
+	height:auto;
+top:200px;
+	flex-direction:column;
+}
+	
+}
