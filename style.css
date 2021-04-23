@@ -77,7 +77,8 @@ color:hsl(240, 5%, 91%);
 }
 
 .question p{
-cursor:pointer;}
+cursor:pointer;
+color:hsl(240, 6%, 50%);}
 
  .question:hover{
 color:hsl(14, 88%, 65%);
@@ -95,15 +96,16 @@ width:100%;}
 	
 .kubs{
 	position:absolute;
-margin-left:240px;
-margin-top:88px;
+margin-left:13%;
+margin-top:5%;
 z-index:1;}
 
 .arrowUp img{
 transform:rotate(180deg);
 }
 .arrowUp p{
-font-weight:bold;}
+font-weight:bold;
+color:hsl(237, 12%, 33%);}
 
 
 
@@ -189,10 +191,50 @@ margin-top:25%;}
 		.kubs{
 		width:18%;
 	position:absolute;
-top:5%;
+top: 90px;
 right:56%;
 z-index:2;}
 
+}
+@media screen and (max-width:600px){
+	.women1 {
+    display: block;
+    width: 51%;
+    position: absolute;
+    left: 24%;
+    top: 68px;
+    z-index: 2;
+}
+.women{
+display:none;}
+	.images {
+ background-image:url(images/bg-pattern-mobile.svg);
+width:100%;
+height:150px;
+background-position:top center ;
+background-size: contain ;
+}
+.kubs{
+    width: 18%;
+    position: absolute;
+    top: 135px;
+    right: 59%;
+    z-index: 2;
+}
+.window{
+flex-direction:column;
+height:auto;
+margin-top:35%;}
+
+.FAQ{
+	width:85%;
+	margin:auto;
+	padding-bottom:40px;
+	
+}
+h1{
+text-align:center;}
+	
 }
 
 @media screen and (max-width:590px){
@@ -232,7 +274,7 @@ background-size: contain ;
 	.kubs{
 		width:28%;
 	position:absolute;
-top:50px;
+top:120px;
 right:60%;
 z-index:2;}
 
