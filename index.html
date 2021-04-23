@@ -71,14 +71,14 @@ for (i = 0; i < acc.length; i++) {
    
    var answer = this.nextElementSibling;
 
-    if (answer.style.display === "none") {
-		answer.style.display = "block";
-		this.classList.toggle("arrowUp");
+    if (answer.style.display === "block") {
+		answer.style.display = "none";
+		this.classList.remove("arrowUp");
 
 	  
     } else {
-		answer.style.display = "none";
-		this.classList.remove("arrowUp")
+		answer.style.display = "block";
+		this.classList.toggle("arrowUp")
 	     }
   });
   
