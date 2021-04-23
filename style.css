@@ -199,9 +199,9 @@ z-index:2;}
 @media screen and (max-width:600px){
 	.women1 {
     display: block;
-    width: 51%;
+    width: 57%;
     position: absolute;
-    left: 24%;
+    left: 22%;
     top: 68px;
     z-index: 2;
 }
@@ -217,7 +217,7 @@ background-size: contain ;
 .kubs{
     width: 18%;
     position: absolute;
-    top: 135px;
+    top: 150px;
     right: 59%;
     z-index: 2;
 }
