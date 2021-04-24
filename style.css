@@ -22,7 +22,7 @@ font-family: 'Kumbh Sans', sans-serif;
 	background-color:white;
 	border-radius:30px;
 	position:relative;
-	overflow: hidden;
+	
 	display:flex;
 	flex-direction:row;
 }
@@ -32,6 +32,7 @@ background-image:url(images/bg-pattern-desktop.svg);
 background-repeat:no-repeat;
 background-position:128% 75% ;
 background-size: 180% ;
+overflow:hidden;
 	}
 	
 	.women{
@@ -96,8 +97,9 @@ width:100%;}
 	
 .kubs{
 	position:absolute;
-margin-left:13%;
-margin-top:5%;
+	transform: translate(-50%, -50%);
+left:0px;
+top:58%;
 z-index:1;}
 
 .arrowUp img{
@@ -120,8 +122,8 @@ color:hsl(237, 12%, 33%);}
 }
 .kubs{
 	position:absolute;
-margin-left:3.5%;
-margin-top:7%;
+left:0;
+top:55%;
 z-index:1;}
 	
 	
@@ -150,8 +152,8 @@ width: 108%;
 }
 .kubs{
 	position:absolute;
-margin-left:3%;
-margin-top:8%;
+left:0px;
+top:55%;
 z-index:1;}
   }
 
@@ -189,10 +191,11 @@ margin-top:25%;}
 	text-align:center;}
 	
 		.kubs{
-		width:18%;
+		width:22%;
 	position:absolute;
-top: 90px;
-right:56%;
+top: 0px;
+right:0px;
+left:24%;
 z-index:2;}
 
 }
@@ -215,10 +218,11 @@ background-position:top center ;
 background-size: contain ;
 }
 .kubs{
-    width: 18%;
+    width: 28%;
     position: absolute;
-    top: 150px;
-    right: 59%;
+    top: 4%;
+    right: 0px;
+	left:22%;
     z-index: 2;
 }
 .window{
@@ -274,9 +278,10 @@ background-size: contain ;
 	.kubs{
 		width:28%;
 	position:absolute;
-top:120px;
-right:60%;
-z-index:2;}
+top:-10px;
+right:0px;
+z-index:2;
+left:70px;}
 
 .FAQ{
 	width:85%;
